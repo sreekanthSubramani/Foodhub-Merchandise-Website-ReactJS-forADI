@@ -1,0 +1,166 @@
+.cartContainer{
+    margin-top: 100px;
+}
+
+.cart-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    font-size: max(1vw,12px);
+    text-align: center;
+}
+
+.rendered img{
+    height: 70px;
+    width: 70px;
+}
+
+.rendered{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    text-align: center;
+
+}
+.rendered img{
+    margin-left: 90px;
+}
+
+.cart-title :last-child{
+    margin-left: -30px; 
+}
+
+.rendered :last-child{
+    margin-left: 30px;
+}
+
+.removerFromCart{
+    cursor: pointer;
+}
+
+.cart-container{
+    display: flex;
+    margin-top: 100px;
+    width: max(400px,60vw);
+    margin-left:30px;
+    justify-content: space-between;
+    gap: max(30px,20vw);
+    margin-bottom: 100px;
+    
+}
+
+.cart-wrapper{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.cart-wrapper h2{
+    color: rgba(226, 56, 56, 0.915);
+}
+.allCartTotals{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cart-promocode{
+    margin-right: -300px;
+    width: max(400px,20vw);
+    padding: 20px;
+    border: 5px solid gray;
+}
+
+.cart-promocode button{
+    color: white;
+    background-color: rgba(226, 56, 56, 0.915);
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.cart-promocode input{
+    height: 30px;
+    width: 200px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: rgba(205, 213, 221, 0.955);
+    color:  rgba(226, 56, 56, 0.915);
+    
+}
+
+.cart-wrapper button{
+    height: 30px;
+    width: 200px;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color:  rgba(226, 56, 56, 0.915);
+    color: white;
+    border: none;
+    
+}
+
+.pop-up-complete{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1000;
+    place-self: center;
+    background: ghostwhite;
+}
+
+.type-of-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 30px;
+    margin-top: -50px;
+}
+
+.type-of-order button{
+    border: none;
+    padding: 10px;
+    background: rgba(226, 56, 56, 0.915); 
+    color: white;
+    font-size: medium;
+}
+
+.collection-message-shop{
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.collection-message-shop p{
+    margin-left: 50px;
+}
+.collection-message-shop a{
+        color: rgba(0, 0, 255, 0.696);
+        text-decoration: underline;
+}
+
+.collection-message-shop span{
+    font-size: 24px;
+
+}
+
+.red-indi{
+    color:  rgba(226, 56, 56, 0.915);
+}
+
+.buttonDisplayer{
+    display: block;
+}
+
+.buttonRemover{
+    display: none;
+}

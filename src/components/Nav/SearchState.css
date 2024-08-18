@@ -1,0 +1,119 @@
+.searchState-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.sub-wrapper-searchState{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+}
+.sub-wrapper-searchState h3{
+ font-size: clamp(14px, 14px, 14px)
+}
+
+.images-css{
+    max-height: 500px;
+    min-height: 200px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.grid-temp-searchState{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.instock{
+    color: green;
+    height: 20px;
+    width: 20px;
+}
+
+.gapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width : 600px;
+    flex-direction: column;
+}
+
+.stock-status{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.price-state{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+.navigate-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    display: grid;
+    place-self: center;
+}
+
+
+.navigate-btn button{
+    background-color:rgba(226, 56, 56, 0.915); ;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px){
+    .searchState-wrapper{
+        height: 100px;
+        top: -50px
+    }
+
+    .sub-wrapper-searchState{
+        top: 10px;
+                
+    }
+
+    .searchState-wrapper img{
+        height: 120px;
+        width: 120px;
+        top: 10px
+    }
+    h3{
+        font-size: 12px;
+        padding: none;
+    }
+    button{
+        height: 50px;
+        font-size: 10px;
+
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width : 100%){
+    
+    .searchState-wrapper{
+        border:  1px solid black;
+        margin-top: -20px;
+        width: 600px;
+        height: 800px;
+    }
+
+
+
+    
+
+}

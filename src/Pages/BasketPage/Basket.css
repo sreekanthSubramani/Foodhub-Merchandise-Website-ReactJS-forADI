@@ -1,0 +1,162 @@
+.cart-logo-container{
+    position: fixed;
+    bottom: 13px;
+    right: 13px;
+    background-color: red;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-logo{
+    font-size: 48px;
+    color: azure;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lo-cart{
+    color: white;
+}
+
+.dot-rep-count{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-stack-adder{
+    height: 80vh;   
+    width: 25vw;
+    background-color: aliceblue;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+
+}
+
+.top-stack-header{
+    height: 40px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+    padding-left: 5px;
+    
+    
+}
+
+.minimise-btn{
+    font-size: 34px;
+}
+
+.scroller-y-axis{
+
+    max-height: 60vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+.main-div-Basket{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-det-basket img{
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+}
+.image-det-basket{
+    display: flex;
+    padding-left: -10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+.name-basketer{
+    width: 100px;
+}
+
+
+.plusser-minus{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+.plusser-minus span{
+    padding: 5px;
+    color: white;
+}
+
+.plusser{
+    background-color: red;
+    border-radius: 100px;
+}
+
+.minuser{
+    background-color: red;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.place-bottom{
+    position: fixed;
+    bottom: -1.5px;
+    padding: 5px;
+}
+.displayer-carter{
+    display: flex;
+    padding-left: 5px;
+}
+.space-around{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ width: 23.5vw;
+}
+
+.total-item-count{
+    padding: 5px;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+}
+.sp-ar{
+    width:  23.5vw;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.sp-ar p{
+    color: red;
+}
+.btn-final-cart{
+    background-color: red;
+    border: none;
+    padding: 5px;
+    color: white;
+    width: 23.5vw;
+}

@@ -1,0 +1,117 @@
+.main-wrap-search{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000090;
+    display: grid;
+
+}
+
+.contents-search-bar{
+    place-self: center;
+ 
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 25px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: white;
+    align-items: center;
+    text-wrap: wrap;
+}
+
+.closure-search{
+    background-color: lightgray;
+    font-size: 25px;
+    border-radius: 30px;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.input-search{
+    text-transform: capitalize;
+    border-radius: 15px;
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 30px;
+    color:  rgba(226, 56, 56, 0.915); 
+    position: relative;
+    width: max(30px,35vw);
+    height: 80px;
+    margin-left: 10px;
+}   
+
+.mapper-search{
+    font-size: 24px;
+    max-height: 40vh;
+    overflow-y: scroll;
+    cursor: pointer;
+    scrollbar-width: thin;
+    
+}
+
+.elem-elem-filter:hover{
+    background-color:rgba(226, 56, 56, 0.915); 
+    color: white;
+}
+
+.elem-elem-filter{
+    padding: 5px;    
+}
+
+.backSPace{
+    position: relative;
+    font-size: 30px;
+    left: -50px;
+    bottom: -10px;
+    cursor: pointer;
+
+}
+
+
+.every-elements{
+    background:rgba(226, 56, 56, 0.915);
+    padding: 10px;
+}
+
+.pad-items{
+    padding: 10px;
+}
+
+
+@media  (max-width :1000px){
+    .contents-search-bar{
+        width: 450px;
+        height: 550px;
+    }
+    
+    .input-search{
+        width: 400px;
+    }
+    
+    .backSPace{
+        top: -50px;
+        left: 350px;
+        display: block;
+    }
+
+    .closure-search{
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .mapper-search{
+        height: 100px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1000px) and (max-width : 100%){
+    .contents-search-bar{
+        height: 1200px;
+    }
+}

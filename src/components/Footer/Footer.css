@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+}
+
+.containerFooter{
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 40vh;
+    display: flex;
+    gap: 70px;
+    padding-left: 20px;
+    justify-content: space-around;
+}
+
+.support-div .containerDiv li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.paymentLogos img{
+    height: 20px;
+    width: 30px;
+}
+
+h4{
+    color: rgba(226, 56, 56, 0.915);  
+}
+
+.followusLogo span{
+    font-size: 44px;
+    padding-right: 20px;
+}
+
+.logoeditor11{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.logoeditor11 img{
+    width: 250px;
+    height: 40px;
+}
+
+.services-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width:1000px){
+ iframe{
+    display: none;
+ }
+
+ .containerFooter{
+    display: flex;
+    justify-content: flex-start;
+    height: 10vh;
+    width: 900px;
+    font-size: 12px;
+    gap:10;
+}
+.containerFooter img{
+    display: none;
+}
+.paymentLogos h4{
+    display: none;
+}
+li{
+    font-size: 10px;
+}
+
+hr{
+    width: 900px;
+}
+
+}

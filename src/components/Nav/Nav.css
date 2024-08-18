@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 3px solid lightgray;
+    padding: 20px 0;
+}
+
+.navBar .logo{
+    width : 150px;
+}
+
+.navBar-menu{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    font-size: 18px;
+
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-right button{
+    background: transparent;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    background: rgba(226, 56, 56, 0.915);
+    color: white;
+    border: none;
+    cursor:pointer
+}
+
+.navBar .active{
+    border-bottom: 4px solid rgba(226, 56, 56, 0.915);
+    padding-bottom: 2px;
+}
+
+.navbar-right .searchLogo{
+    font-size: 24px;
+}
+.navBar-searchIcon{
+    position: relative;
+}
+
+.navBar-searchIcon .cartLogo{
+    font-size: 24px;
+    position: relative;
+}
+
+.navBar-searchIcon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background:rgba(226, 56, 56, 0.915); 
+    border-radius: 5px;
+    top: -8px;
+    right: -8px
+
+}
+    
+a {
+   
+    color: inherit;
+  }
+
+  .searchLogo{
+    cursor: pointer;
+  }
+
+@media (max-width:1000px){
+    body{
+        display: inline-block;
+        min-width: 900px;
+        max-width: 900px;
+    }
+    .logo{
+ display: none   
+}
+
+li{
+    font-size: 14px;
+    text-wrap: nowrap;
+}
+hr{
+    width: 900px;
+}
+}

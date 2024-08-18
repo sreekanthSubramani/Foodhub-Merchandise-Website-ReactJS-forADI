@@ -1,0 +1,31 @@
+.playstore{
+    height: 80px;
+    width: max(2vw,300px);
+}
+
+.appstore{
+    height: 80px;
+    width: max(2vw,300px);
+}
+
+.app-download{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:40px ;
+    gap: 20px;
+    text-align: center;
+    font-size: max(2vw,30px);
+}
+
+.app-download-logos img{
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+.app-download-logos img:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}

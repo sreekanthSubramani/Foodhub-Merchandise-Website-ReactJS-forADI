@@ -1,0 +1,113 @@
+.popup{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000090;
+    display: grid;
+}
+
+.popupContainer{
+    place-self: center;
+    width: max(23vw,330px);
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.createaccount{
+    cursor: pointer;
+}
+
+.forgetPass{
+    cursor: pointer;
+}
+
+.popup button{
+    background: rgba(226, 56, 56, 0.915); 
+    height: 50px;
+    width: 100px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.popup button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginClose{
+display: flex;
+justify-content: space-between;
+}
+
+.closure-close{
+    font-size: 22px;
+}
+
+.form-login-cred input{
+    width: 250px;
+    outline: none;
+    border-bottom: none;
+    height: 30px;
+}
+
+.form-login-cred div{
+    margin-bottom: 20px;
+}
+
+.form-login-cred h4{
+    padding-bottom: 10px;
+}
+
+.button-logins{
+    display: flex;
+    align-items: center;
+}
+
+.button-logins button{
+    height: 40px;
+    padding: 10px;
+}
+
+.gmail-sign{
+    height: 44px;
+    width: 44px;
+}
+
+.apple-sign{
+    height: 28px;
+    width: 44px;
+    transform: translate(-2px,-3px);
+}
+
+.hover-underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popup input:hover{
+    border-bottom: 2px solid solid;
+}
+
+.error-code{
+    color: red;
+    font-style: italic;
+}
+
+.showPasword{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.showPassword-div{
+    display: flex;
+    gap: 20px;
+}

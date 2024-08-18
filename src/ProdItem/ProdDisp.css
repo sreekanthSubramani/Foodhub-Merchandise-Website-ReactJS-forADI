@@ -1,0 +1,205 @@
+.pr-item{
+    width: 100%;
+    margin-left: 30px;
+    border-radius: 15px;
+    box-shadow: 3px rgba(226, 56, 56, 0.915); 
+    padding: 30px;
+}
+
+.pr-name-info{
+    background-color: rgba(204, 171, 171, 0.423);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    background-color: rgba(226, 56, 56, 0.915);
+    border-radius: 30px;
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.pre-name-info span{
+display: flex;
+cursor: pointer;
+}     
+
+.re-direct-span :hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    cursor: pointer;
+}     
+
+.prodImag{
+    border-image: fill 0 linear-gradient(rgb(140, 28, 32),#921111);
+}
+
+
+.pr-item-container{
+    display: flex;
+    transform: translate(50px);
+    
+}
+
+.pr-item-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6vh; /* Adjust the height to control the blur area */
+    filter: blur(-20px); /* Adjust the blur amount */
+    pointer-events: none;
+}
+
+
+.pr-price span{
+    color: rgba(226, 56, 56, 0.915);
+
+}
+.pr-descp h4{
+    margin: 10px;
+}
+
+
+.pr-descp li{
+    max-width: 400px;
+}
+
+#plusIcon{
+    transform: translate(10px,-2px);
+    cursor: pointer;
+    background-color:  rgba(226, 56, 56, 0.915);
+    color: white;
+    border: none;
+    padding: 7px;
+}
+
+#counterFunc button {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 5px;
+    color: white;
+    align-items: center;
+    width: 20vw;
+    transform: translate(-20px);
+}
+
+
+#counterFunc span {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 5px;
+    color: white;
+    align-items: center;
+}
+
+#counterFunc h3{
+    margin-top: -4px;
+}
+
+#minusOne{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#plusOne{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+.pr-item:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.pr-item:hover::before{
+    content: "↓ Click here for more";
+    position: absolute;
+    top: 0;
+    left:  2;
+} 
+
+#bgAdder{
+    display: flex;
+   justify-content: center;
+   color: red;
+   margin-left: -30px;
+
+}
+
+.ticker{
+    color: green;
+    cursor: pointer;
+}
+
+.i-information{
+    cursor: pointer;
+}
+
+.changePointer{
+    cursor: pointer;
+}
+.afterCartAdder{
+    display: flex;
+    width: 9vw;
+    margin-left: 10px;
+    display: flex;
+
+    justify-content: space-between;
+}
+#plusOne{
+    margin-right: 20px;
+    color:  rgba(226, 56, 56, 0.915);;
+}
+#minusOne{
+    margin-left: 20px;
+    color:  rgba(226, 56, 56, 0.915);
+}
+
+#total-nums-cart{
+    color:  rgba(226, 56, 56, 0.915);
+}
+
+@media (max-width:1000px) {
+    .pr-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px;
+        margin-bottom: 90px;
+        margin-left: -30px;
+        width: 300px;
+        height: 200px;
+        padding: 30px;
+        font-size: 14px;
+        position: relative;
+    }
+    
+    .pr-name-info{
+        font-size: 14px;
+        width: 200px;
+        height: 40px;
+        text-wrap: wrap;
+        padding: none;
+    }
+
+    .pr-name-info h3{
+        font-size: 10px;
+    }
+    .pr-descp{
+        font-size: 10px;
+    }
+    .pr-descp li{
+        max-width: 300px;
+        text-wrap: wrap;
+    }
+}

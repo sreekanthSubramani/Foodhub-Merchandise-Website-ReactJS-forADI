@@ -1,0 +1,127 @@
+.prod-display{
+    margin-top: 30px;
+
+}
+.prod-display p{
+    text-align: center; 
+    background-color: rgba(226, 56, 56, 0.915); 
+    color: white;
+    font-weight: bold;
+} 
+
+.pr-item-container img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.prod-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px,1fr));
+    margin-top: 30px;
+    padding: 20px 30px;
+    
+}
+
+.prod-display img{
+    height: 300px;
+    width: 300px;
+}
+.pagination-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.selected-cat-prod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.text-selected-prod{
+    padding: 10px;
+}
+
+.smartFilter{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.smartFilter input[type="range"]{
+    width: 80vw;
+    background: linear-gradient(to right red 10%, white 10%);
+}
+.spanner-checkbox{
+    display: flex;
+    flex-direction: row;
+    row-gap: none;
+    margin: none;    
+}
+
+.useFeature-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.new-feature-div{
+    text-align: center;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    row-gap: 0;
+}
+
+.arrows-to-filter{
+    display: flex;
+    gap: 20px;
+}
+
+.option-listers{
+    display: flex;
+    justify-self: space-around;
+    text-align: center;
+    font-size: 16px;
+    background: white;
+    color:  rgba(226, 56, 56, 0.915); 
+    font-weight: bold;
+
+}
+.filt-showpop{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+@media (max-width:1000px){
+
+
+#prod-display-menu1 {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.prod-display-list{
+    margin-top: -30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(450px,1fr));
+    max-height: 500px;
+    padding: 30px;
+    max-height: 150vh;
+}
+.prod-display-list img{
+    height: 150px;
+    width: 150px;
+}
+
+}

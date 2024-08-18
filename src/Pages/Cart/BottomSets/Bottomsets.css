@@ -1,0 +1,95 @@
+.from-btm{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    border: 1px solid red;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: white
+}
+
+.del-details-btm{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.deliveryFields{
+
+    border-radius: 30px;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+
+.delivery-inputs{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+}
+.field-holder{
+    position: relative;
+}
+
+input{
+    border: 0;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 320px;
+    font-size: medium;
+}
+
+label{
+    position: absolute;
+    top:0;
+    left: 0
+}
+
+input:focus + label,
+input:valid + label
+{
+    top:-25px;
+    font-weight: bolder;
+
+}
+
+
+
+.deliveryFields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gridder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+
+.button-submit-gridder{
+    margin-top: 20px;
+}
+.button-submit-gridder button{
+    width: 100px;
+    border: none;
+    background-color:  red;
+    color: white;
+    padding: 10px;
+}
+
+.close-btn-config{
+    margin-left: 20px;
+    font-size: 38px;
+}
+
+.error-disp{
+    color: red;
+}
