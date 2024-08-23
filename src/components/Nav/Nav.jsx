@@ -43,7 +43,7 @@ const Nav = ({setLogin, setSearchToggle})=>{
           onClick={() => setCurrentSelection("app")}
           className={currentSelection === "app" ? "active" : ""}  
         >
-          <a href="#app-download"> App</a>
+            <Link to="cart">Cart</Link>
         </li>
         <li
           onClick={() => setCurrentSelection("contactUs")}

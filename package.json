@@ -16,6 +16,7 @@
     "@mui/material": "^5.16.4",
     "@react-pdf/renderer": "^3.4.4",
     "firebase": "^10.12.5",
+    "num-words": "^1.2.3",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
     "react-dom": "^18.2.0",

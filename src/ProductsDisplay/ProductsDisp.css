@@ -102,6 +102,12 @@
     padding: 20px;
 }
 
+.discount-Tag{
+    transform: translate(0, 2px);
+    color:black
+}
+
+
 
 @media (max-width:1000px){
 

@@ -17,6 +17,7 @@ const StoreContextProvider = (props) =>{
     const[orderCompletionFields, setOrderCompletionFields] = useState(null)
     const[orderTypePDF, setOrderTypePDF] = useState("Collection") 
     const [deliveryAddressPDF, setDeliveryAddressPDF] = useState({})
+    const [walletFundsCont, setWalletFundsCont] = useState(0)
     
     const addItem = (itemID) =>{
         if(!cartAdder[itemID]){
@@ -61,7 +62,9 @@ const StoreContextProvider = (props) =>{
         orderTypePDF, 
         setOrderTypePDF,
         setDeliveryAddressPDF,
-        deliveryAddressPDF
+        deliveryAddressPDF,
+        setWalletFundsCont,
+        walletFundsCont
     }
 
     return(

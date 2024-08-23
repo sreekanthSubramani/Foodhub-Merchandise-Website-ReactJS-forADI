@@ -109,9 +109,14 @@
     place-self: center;
     background: ghostwhite;
 }
+.order-type-buttons button{
+    font-size: 10px;
+    margin: 5px;
+}
 
 .type-of-order{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
@@ -164,3 +169,11 @@
 .buttonRemover{
     display: none;
 }
+
+.underliner{
+    font-style: italic;
+}
+abbr{
+    cursor: pointer;
+}
+

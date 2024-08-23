@@ -19,6 +19,7 @@ import { StoreContext } from '../../Context/StoreContext';
 import { signOut } from 'firebase/auth';
 import { auth } from '../FirebaseConfig/FirebaseConfig';
 import { useNavigate } from 'react-router-dom';
+import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 
 
 
@@ -37,6 +38,11 @@ function SimpleDialog(props) {
     
   }
 
+  const navtoWallet = ()=>{
+    navigate("/wallet")
+    return handleClose()
+  }
+
 
 
   const handleLogOut = async ()=>{
@@ -46,6 +52,7 @@ function SimpleDialog(props) {
     localStorage.removeItem("isLoggedIn")
     localStorage.removeItem("userMetaData")
     localStorage.removeItem("orderIDP")
+    localStorage.removeItem("currentWallet")
     navigate("/")
     window.location.reload()
   }catch(e){
@@ -61,7 +68,7 @@ function SimpleDialog(props) {
 
  // console.log(userMetaData)
 
-  const memoizedMetaName = useMemo(() => userMetaData?.metaName, [userMetaData?.metaName]);
+
   const memoizedMetaPic = useMemo(() => userMetaData?.metaPic, [userMetaData?.metaPic])
 
 
@@ -89,13 +96,19 @@ function SimpleDialog(props) {
                 </Avatar>
              }    
               </ListItemAvatar>
-              <Typography style={{marginLeft:20}}>{memoizedMetaName}</Typography>
+              <Typography style={{marginLeft:20}}>{auth?.currentUser?.displayName}</Typography>
             </ListItemButton>
             
 
             <ListItemButton style={{gap: 30}}>
                 <ShoppingCartIcon /> 
               <ListItemText onClick={navToCart}> My Cart </ListItemText>
+            </ListItemButton>
+
+
+            <ListItemButton style={{gap: 30}}>
+                <AccountBalanceWalletIcon /> 
+              <ListItemText onClick={navtoWallet}> Foodhub Wallet </ListItemText>
             </ListItemButton>
 
 

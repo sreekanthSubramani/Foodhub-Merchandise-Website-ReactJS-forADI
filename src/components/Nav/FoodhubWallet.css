@@ -1,0 +1,110 @@
+.wallet-height{
+    height: 70vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.available-wallet{
+    height: 50vh;
+    width: 30vw;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.wallet-fund{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.methods-wallet{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    
+}
+.methods-wallet button{
+    color: white;
+    border: none;
+    gap: 10px;
+    height: 35px;
+}
+
+.redeem-btn{
+    background: red;
+    cursor: pointer;
+}
+
+.topup-btn{
+    background: green;
+    cursor: pointer;
+}
+
+.ptag-denote{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.second-Grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.congo-redeem{
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: red;
+    color: white;
+}
+
+.display-none{
+    display: none;
+}
+
+.form-cardDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 3px solid gray;
+    padding: 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.923);
+}
+
+.topup-btn-tp{
+    width: auto;
+    border: none;
+    color: white;
+    background: green;
+    height: 30px;
+    text-align: center;
+}
+
+.redeemer-UI{
+    display: flex;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.redeemer-UI button{
+    height: 40px;
+    width: 190px;
+    margin-left: 10px;
+    border: none;
+}

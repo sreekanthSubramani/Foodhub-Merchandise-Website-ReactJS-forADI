@@ -157,9 +157,8 @@
         const userAuthentication = useCallback(()=>{
             onAuthStateChanged(auth,(user)=>{
                 if(user && user.uid){
-                    console.log(user.uid)
                     setIfLoggedIn(true)
-                    console.log(user)   
+               
                     setUserMetaData({
                         metaName : auth.currentUser.displayName,
                         metaPic : auth.currentUser.photoURL

@@ -32,7 +32,7 @@ const handleCVVChange  = (e) => {
     }
     setCardField((prev) => ({ ...prev, cvvNumber: value }));
   };
-console.log(cardField)
+
 
 
 const navigateToStepper = (e)=>{
@@ -41,6 +41,7 @@ const navigateToStepper = (e)=>{
     return locateStepper("/orderCompletion")
 }
 
+console.log(cardField)
 
 
   return (

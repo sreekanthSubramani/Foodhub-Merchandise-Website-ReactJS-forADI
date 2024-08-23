@@ -7,7 +7,8 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { useNavigate } from "react-router-dom";
 import LazyLoad from 'react-lazy-load';
-
+import { RiDiscountPercentLine } from "react-icons/ri";
+import { FaHandHoldingHeart } from "react-icons/fa";
 
 const ProductsDisp = ({ category }) => {
   const { productDetails } = useContext(StoreContext);
@@ -68,7 +69,19 @@ const ProductsDisp = ({ category }) => {
 
   return (
     <div className="prod-display" id="prod-display-menu1">
-      <p>Products for you...</p>
+      <p>Products for you...</p> 
+       
+       
+       <marquee>
+      <div style={{display :"flex", padding: "10px", gap:"150px", color: "red"}}>
+       <div> <h4>Love <FaHandHoldingHeart color="black"/> Local</h4></div>
+        <div> <h4>Be a supersaver <RiDiscountPercentLine className="discount-Tag"/></h4></div>
+        <div><h4>Queries Helpdesk - <span style={{color: "black"}}>hello@foodhub.com</span></h4></div>
+        <div><h4>Make use of your Wallet funds</h4></div>
+        </div>
+        </marquee>
+     
+      
       <div className="smartFilter">
         <h3>Smart Filter</h3>
         <div className="new-feature-div">

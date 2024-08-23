@@ -11,6 +11,7 @@ import ProductInfo from './Pages/Product-Info/ProductInfo'
 import Basket from './Pages/BasketPage/Basket'
 import CardItems from './Pages/Card-Items/Carditems'
 import StepperComponent from './StepperComp/StepperComponent'
+import FoodhubWallet from './components/Nav/WalletPage'
 
 const App = () => {
     const [login, setLogin] = useState(false)
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/products" element={<Home/>} />
         <Route path= "/product/item/:id" element={<ProductInfo/>} />
         <Route path="/orderCompletion" element={<StepperComponent />} />
+        <Route path="/wallet" element={<FoodhubWallet />}/>
         </Routes>  
         {shouldDisplayNavFooter && shouldNotDispBasket && <Basket /> }
 

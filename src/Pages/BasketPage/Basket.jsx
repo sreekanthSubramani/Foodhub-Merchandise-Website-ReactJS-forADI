@@ -69,7 +69,7 @@ useEffect(()=>{
         <h5>Your products</h5>
         <span className="minimise-btn" onClick={()=> setFullCart(prev=> !prev)}><FiMinimize2 /></span>
     </div>
-    <div className="scroller-y-axis">
+    <div className="scroller-y-axis" >
     {productDetails.map((elem,index)=>{
             if(cartAdder[elem.id] > 0)
                 return(
