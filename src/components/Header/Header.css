@@ -1,23 +1,8 @@
 .header{
     height: 34vw;
-    background: url('/posimage.png') no-repeat;
     background-size: contain;
     position: relative;
-    margin: auto;
-}
-
-.header-content{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 40%;
-    gap: 1.5vw;
-    min-width: 50%;
-    right: 2vw;
-    margin-top: 8vh;
-    font-size: max(2vw,22px);
-    animation: fader 3s;
+    animation: fader 1s;
 }
 
 .header-content button{
@@ -25,10 +10,94 @@
     width: 16vh;
     border: none;
     font-weight: bolder;
-    background-color:  rgba(226, 56, 56, 0.915); ;
+    background-color:  white; 
     color: white;
     cursor: pointer;
 }
+
+.first-cover-1{
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(217, 33, 33, 0.938);
+    height: 34dvh;
+}
+.first-cover-post{
+    margin: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+}
+
+.first-cover-1 button{
+    background: red;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    width: 120px;
+    box-shadow: 3px 3px 3px black;
+}
+
+
+.first-cover-2{
+    color: white;
+    display: flex;
+    padding-left: 90px;
+    width: 500px;
+    padding-top: 50px ;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.381);
+    padding-bottom: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+
+.first-cover-2 button{
+    width: 180px;
+    background: red;
+    padding: 10px;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    margin-top: 10px;
+}
+
+.first-cover-3{
+    padding-top: 3px;
+    color: inherit;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 730px;
+   color: rgba(0, 0, 0, 0.789);
+    margin: auto;
+    background: rgba(255, 255, 255, 0.6);
+    padding-bottom: 20px;
+    border-radius: 30px;
+    padding-top: 40px;
+}
+
+
+
+.first-cover-3 button{
+    width: 180px;
+    background: red;
+    padding: 10px;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 3px black;
+    margin-top: 10px;
+}
+
 
 @media (max-width:1000px){
 

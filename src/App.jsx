@@ -12,6 +12,7 @@ import Basket from './Pages/BasketPage/Basket'
 import CardItems from './Pages/Card-Items/Carditems'
 import StepperComponent from './StepperComp/StepperComponent'
 import FoodhubWallet from './components/Nav/WalletPage'
+import FAQPage from './Pages/FAQpage/FAQpage.'
 
 const App = () => {
     const [login, setLogin] = useState(false)
@@ -32,7 +33,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/cardPage" element={<CardItems />} />
-        <Route path="/products" element={<Home/>} />
+        <Route path="/faqPage" element={<FAQPage/>} />
         <Route path= "/product/item/:id" element={<ProductInfo/>} />
         <Route path="/orderCompletion" element={<StepperComponent />} />
         <Route path="/wallet" element={<FoodhubWallet />}/>

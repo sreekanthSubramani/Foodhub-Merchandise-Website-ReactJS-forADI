@@ -1,0 +1,62 @@
+.Faq-container{
+height: 90vh;
+}
+
+.Faq-insider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.qa-faq{
+    width: 1000px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+}
+
+.ans-faq{
+    width: 1000px;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    animation: fader 1s;
+}
+
+.signUp-FAQ{
+    height: 24vh;
+}
+
+.signUp-Block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.signUp-btn-faq{
+    display: flex;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(217, 33, 33, 0.938);
+}
+
+.call-logo-faq{
+    font-size: 16px;
+}

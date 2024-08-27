@@ -1,0 +1,94 @@
+.bookaCall-display{
+    height: 119.5vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.175);
+    display: grid;
+    position: absolute;
+}
+
+.bookaCall-disp{
+    display: grid;
+    place-self: center;
+    height: 80vh;
+    width: 40vw;
+    background: white;
+    border-radius: 5px;
+}
+
+.content-inside-bookaCall{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.contents-grid-call{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-letus{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.content-flex{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.flex-inside-from{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.content-flex-check{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.checks-form{
+    display: flex;
+    flex-direction: column; 
+    row-gap: none;
+    margin-left: -60px;
+}
+
+.check-label{
+    gap: none;
+    padding: none;
+}
+
+.button-book-aCall{
+background: red;
+padding: 10px;
+color: white;
+border: none;
+box-shadow: 3px 3px 3px black;
+width: 40px;
+}
+
+.submit-btn-bookaCall{
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn-bookaCall button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: red;
+}
+
+.welcome-foodhub{
+    color:  rgba(217, 33, 33, 0.938);
+}
+
+.afterFinishSignUp{
+    margin: auto;
+}

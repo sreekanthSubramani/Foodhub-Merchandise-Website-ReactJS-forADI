@@ -84,7 +84,7 @@ const ProductsDisp = ({ category }) => {
       
       <div className="smartFilter">
         <h3>Smart Filter</h3>
-        <div className="new-feature-div">
+        <div className="new-feature-div" id="smartFilter">
       <input type="checkbox" onChange={checkedFeature} checked={useSmartFeature}/>
       <h4>Use this feature</h4> 
       </div>

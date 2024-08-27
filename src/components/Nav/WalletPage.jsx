@@ -26,7 +26,7 @@ export default function FoodhubWallet() {
   })
 
   useEffect(() => {
-    if (ifLoggedIn && !localStorage.getItem("currentWallet")) {  // Only set if wallet is null (first load)
+    if (ifLoggedIn && !localStorage.getItem("currentWallet")) {  
       setWalletFunds(10);
       localStorage.setItem("currentWallet", 10);
     }

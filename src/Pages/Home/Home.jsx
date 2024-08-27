@@ -12,7 +12,7 @@ export default function Home({setLogin}){
     
     return(
         <div>
-            <Header />
+            <Header setActiveState={setActiveState} />
             <ProdcutsShow activeState={activeState} setActiveState={setActiveState}/>
             <ProductsDisp category={activeState}/>
             <AppDownload />

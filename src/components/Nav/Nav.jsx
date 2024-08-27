@@ -34,12 +34,6 @@ const Nav = ({setLogin, setSearchToggle})=>{
           <Link to="/">Home</Link>
         </li>
         <li
-          onClick={() => setCurrentSelection("menu")}
-          className={currentSelection === "menu" ? "active" : ""}
-        >
-         <Link to="/products"> Menu</Link>
-        </li>
-        <li
           onClick={() => setCurrentSelection("app")}
           className={currentSelection === "app" ? "active" : ""}  
         >
@@ -50,6 +44,12 @@ const Nav = ({setLogin, setSearchToggle})=>{
           className={currentSelection === "contactUs" ? "active" : ""}
         >
           <a href="#footerDivUpdated">Contact Us</a>
+        </li>
+        <li
+          onClick={() => setCurrentSelection("menu")}
+          className={currentSelection === "menu" ? "active" : ""}
+        >
+         <Link to="/faqPage"> FAQ </Link>
         </li>
       </ul>
       <div className="navbar-right">
