@@ -9,12 +9,18 @@ import { useNavigate } from "react-router-dom";
 import LazyLoad from 'react-lazy-load';
 import { RiDiscountPercentLine } from "react-icons/ri";
 import { FaHandHoldingHeart } from "react-icons/fa";
+import Bookacall from './../Pages/FAQpage/Bookacall/Bookacall'
+
+
 
 const ProductsDisp = ({ category }) => {
   const { productDetails } = useContext(StoreContext);
   const { pageCounter,setBreadCrumbName } = useContext(StoreContext);
   const [useSmartFeature, setUseSmartFeature] = useState(false)
   const [budgetFilter, setBudgetFilter] = useState(parseInt(parseFloat(0)))
+  const [showBook, setShowBook] = useState(false)
+
+
 
   const navigate = useNavigate()
   const max = 1000
@@ -69,6 +75,7 @@ const ProductsDisp = ({ category }) => {
 
   return (
     <div className="prod-display" id="prod-display-menu1">
+      {showBook && <Bookacall setShowBook={setShowBook}/>}
       <p>Products for you...</p> 
        
        
@@ -77,7 +84,8 @@ const ProductsDisp = ({ category }) => {
        <div> <h4>Love <FaHandHoldingHeart color="black"/> Local</h4></div>
         <div> <h4>Be a supersaver <RiDiscountPercentLine className="discount-Tag"/></h4></div>
         <div><h4>Queries Helpdesk - <span style={{color: "black"}}>hello@foodhub.com</span></h4></div>
-        <div><h4>Make use of your Wallet funds</h4></div>
+        <div><h4>Make use of your <span style={{color: "black"}}>Wallet funds</span></h4></div>
+        <div><h4>Sign up with Foodhub by clicking <span style={{color: "black", textDecoration:"underline", cursor:"pointer"}} onClick={()=>setShowBook(prev=> !prev)}>Sign Up Form </span></h4></div>
         </div>
         </marquee>
      

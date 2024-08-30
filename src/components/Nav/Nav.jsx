@@ -64,10 +64,7 @@ const Nav = ({setLogin, setSearchToggle})=>{
         </div>
         :
         <BasicCard />}
-        
-        
       </div>
-
     </div>
     </>
   );

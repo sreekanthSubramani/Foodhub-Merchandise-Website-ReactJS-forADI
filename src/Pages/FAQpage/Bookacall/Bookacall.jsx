@@ -6,7 +6,7 @@ import "flatpickr/dist/themes/material_red.css";
 
 
 
-export default function Bookacall({setcallDisplay}){
+export default function Bookacall({setcallDisplay,setShowBook}){
 
     const [showTick, setShowTick] = useState(false)
 
@@ -40,7 +40,6 @@ useEffect(()=>{
         
 
 
-
         const handleSignUpForm = (e)=>{ 
             const {name, value} = e.target
             setFormState({...formState, [name]: value})
@@ -72,6 +71,13 @@ useEffect(()=>{
             setShowTick((prev)=> !prev)
         }
 
+
+        const closureBookaCall = ()=>{
+            setShowBook(prev=> !prev)
+            setcallDisplay(prev=>!prev)
+        }
+
+
     
     return(
         <div className='bookaCall-display'>
@@ -85,7 +91,7 @@ useEffect(()=>{
                     <p>Please spend a minute for us to know you better</p>
                     </div>
                 </span>
-                <span onClick={()=>setcallDisplay(prev=>!prev)}><RiCloseLine /></span>
+                <span onClick={closureBookaCall}><RiCloseLine /></span>
                 </div>
 
 
@@ -163,7 +169,7 @@ useEffect(()=>{
                     options={{
                         enableTime: true,
                         disable: [disableWeekends,disableTimeRange],
-                        dateFormat: "Y-m-d H:i", // Date format
+                        dateFormat: "Y-m-d H:i", 
                         minTime: "11:00",
                         maxTime : "19:3 0"
                     }}/>

@@ -4,6 +4,7 @@
     background: rgba(0, 0, 0, 0.175);
     display: grid;
     position: absolute;
+    z-index: 1000;
 }
 
 .bookaCall-disp{
