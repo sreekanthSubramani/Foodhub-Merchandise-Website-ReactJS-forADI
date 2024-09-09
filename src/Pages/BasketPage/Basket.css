@@ -44,6 +44,7 @@
     bottom: 0px;
     right: 0px;
     position: fixed;
+    z-index: 3000;
 
 }
 
@@ -56,8 +57,7 @@
     align-items: center;
     font-size: 26px;
     padding-left: 5px;
-    
-    
+    z-index: 3000;
 }
 
 .minimise-btn{
