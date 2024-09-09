@@ -71,10 +71,13 @@ useEffect(()=>{
             setShowTick((prev)=> !prev)
         }
 
+     const closureBookaCall =()=>{
+            if(setcallDisplay){
+                setcallDisplay(prev=> !prev)
+            }else{
+                setShowBook(prev=> !prev)
+            }
 
-        const closureBookaCall = ()=>{
-            setShowBook(prev=> !prev)
-            setcallDisplay(prev=>!prev)
         }
 
 
